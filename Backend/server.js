@@ -6,7 +6,13 @@ import ideaRoutes from './routes/ideaRoutes.js';
 
 dotenv.config();
 const app = express();
-app.use(cors());
+const corsOptions = {
+  origin: "https://day-twentyseven-1.onrender.com",
+  methods: ["GET", "POST", "PATCH", "DELETE"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/ideas', ideaRoutes);
