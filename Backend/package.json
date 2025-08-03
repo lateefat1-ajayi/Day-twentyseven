@@ -115,10 +115,9 @@
     "whatwg-url": "^14.2.0",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node server.js",
-  "dev": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
